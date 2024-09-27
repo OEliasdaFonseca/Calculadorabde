@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Calculadora BDE</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora BDE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora BDE</h1>
+    <p>Calcule a quantidade de ingredientes para assadeiras retangulares e redondas.</p>
+    
+    <form id="ingredientForm">
+      <div class="form-group">
+        <label for="shape">Escolha o formato da assadeira:</label>
+        <select id="shape" required>
+          <option value="rectangular">Retangular</option>
+          <option value="round">Redonda</option>
+        </select>
+      </div>
+
+      <div id="rectangularInputs" class="shape-inputs">
+        <div class="form-group">
+          <label for="width">Largura da Assadeira (cm):</label>
+          <input type="number" id="width" placeholder="Ex: 40" required>
+        </div>
+        <div class="form-group">
+          <label for="height">Altura da Assadeira (cm):</label>
+          <input type="number" id="height" placeholder="Ex: 30" required>
+        </div>
+      </div>
+
+      <div id="roundInputs" class="shape-inputs" style="display: none;">
+        <div class="form-group">
+          <label for="diameter">Diâmetro da Assadeira (cm):</label>
+          <input type="number" id="diameter" placeholder="Ex: 30">
+        </div>
+      </div>
+
+      <button type="submit">Calcular Ingredientes</button>
+    </form>
+
+    <div id="result" class="result">
+      <h2>Ingredientes Calculados:</h2>
+      <p id="sugar">Açúcar: - g</p>
+      <p id="butter">Margarina: - g</p>
+      <p id="eggs">Ovos: - g</p>
+      <p id="flour">Trigo: - g</p>
+      <p id="chocolate">Achocolatado: - g</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
